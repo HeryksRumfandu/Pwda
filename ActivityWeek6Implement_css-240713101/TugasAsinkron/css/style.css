@@ -1,0 +1,120 @@
+/* Background and overall layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 2px solid #f5c518;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 20px 30px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f5c518;
+    padding: 0 10px;
+}
+
+/* Form elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1.8px solid #f5c518;
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 6px #f5c518;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #fff200;
+    box-shadow: 0 0 12px #fff200;
+    background-color: #333;
+}
+
+/* Radio button labels */
+input[type="radio"] {
+    margin-left: 8px;
+    margin-right: 5px;
+    accent-color: #f5c518;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-right: 18px;
+}
+
+/* Submit button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f5c518 0%, #e6b800 100%);
+    border: none;
+    border-radius: 12px;
+    color: #111;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #f5c518aa;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #fff200 0%, #f5c518 100%);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    label, input, select {
+        font-size: 1rem;
+    }
+}
