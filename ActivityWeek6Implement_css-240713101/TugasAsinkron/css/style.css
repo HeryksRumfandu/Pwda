@@ -1,8 +1,7 @@
-/* Background and overall layout */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background: url('image.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
 }
@@ -17,7 +16,6 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
-/* Header */
 h1 {
     text-align: center;
     font-weight: 700;
@@ -26,12 +24,11 @@ h1 {
     text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.8);
 }
 
-/* Fieldset styling */
 fieldset {
     border: 2px solid #f5c518;
     border-radius: 10px;
     margin-bottom: 25px;
-    padding: 20px 30px;
+    padding: 16px 28px;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -42,11 +39,7 @@ legend {
     padding: 0 10px;
 }
 
-/* Form elements */
 input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
 select {
     width: 100%;
     padding: 8px 12px;
@@ -62,9 +55,6 @@ select {
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus,
 select:focus {
     outline: none;
     border-color: #fff200;
@@ -72,7 +62,6 @@ select:focus {
     background-color: #333;
 }
 
-/* Radio button labels */
 input[type="radio"] {
     margin-left: 8px;
     margin-right: 5px;
@@ -85,7 +74,6 @@ label {
     margin-right: 18px;
 }
 
-/* Submit button */
 .submit-btn {
     display: block;
     width: 100%;
@@ -106,7 +94,6 @@ label {
     background: linear-gradient(90deg, #fff200 0%, #f5c518 100%);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .container {
         padding: 20px;
